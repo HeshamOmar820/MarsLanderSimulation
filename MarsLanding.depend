@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1667521106 source:d:\halby's things\orange\projects\marslanding\main.cpp
+1667570040 source:d:\halby's things\orange\projects\marslanding\main.cpp
 	<SFML/Audio.hpp>
 	<bits/stdc++.h>
 	<SFML/Graphics.hpp>
 	<time.h>
 	<list>
+	"Headers/collision.h"
 
 1525812018 d:\halby's things\orange\sfml-2.5.1\include\sfml\audio.hpp
 	<SFML/System.hpp>
@@ -518,4 +519,17 @@
 	<SFML/Graphics/PrimitiveType.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
+
+1667565975 d:\halby's things\orange\projects\marslanding\headers\collision.h
+	<SFML/Graphics.hpp>
+
+1667567331 source:d:\halby's things\orange\projects\marslanding\collision.cpp
+	<SFML/Graphics.hpp>
+	<map>
+	<vector>
+	<array>
+	"Collision.h"
+
+1667567330 d:\halby's things\orange\projects\marslanding\collision.h
+	<SFML/Graphics.hpp>
 
