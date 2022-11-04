@@ -282,23 +282,23 @@ int main()
         float x=0;
         while (true)
         {
-            if(client.receive(data, 8*32, received) == sf::Socket::Done)
+            if(client.receive(data, 8*4, received) == sf::Socket::Done)
             {
                 system("CLS");
                 // TCP socket:
-                if (client.receive(data, 8*32, received) != sf::Socket::Done)
+                if (client.receive(data, 8*4, received) != sf::Socket::Done)
                 {
                     // error...
                     std::cout << "error in 4"<< std::endl;
                 }
-                std::cout << "velocity x:" <<data[0]<< '\r'<<std::endl;
-                std::cout << "velocity y:" <<data[1]<< '\r'<<std::endl;
-                std::cout << "acceleration x:" <<data[2]<< '\r'<<std::endl;
-                std::cout << "acceleration y:" <<data[3]<< '\r'<<std::endl;
-                std::cout << "angle:" <<data[4]<< '\r'<<std::endl;
-                std::cout << "fuel:" <<data[5]<< '\r'<<std::endl;
-                std::cout << "crashed:" <<data[6]<< '\r'<<std::endl;
-                std::cout << "landed:" <<data[7]<< '\r'<<std::endl;
+                std::cout << "velocity x:" <<data[0]<<std::endl;
+                std::cout << "velocity y:" <<data[1]<<std::endl;
+                std::cout << "acceleration x:" <<data[2]<<std::endl;
+                std::cout << "acceleration y:" <<data[3]<<std::endl;
+                std::cout << "angle:" <<data[4]<<std::endl;
+                std::cout << "fuel:" <<data[5]<<std::endl;
+                std::cout << "crashed:" <<data[6]<<std::endl;
+                std::cout << "landed:" <<data[7]<<std::endl;
             }
         }
     }else{
